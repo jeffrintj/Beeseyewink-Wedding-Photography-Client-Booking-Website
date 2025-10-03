@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contentpage {
+    height: 2900px;
+    max-width: 1080px;
+    background-color: whitesmoke
+}
+
+.navbar {
+    background-color: rgb(250, 250, 157);
+    max-width: 1080px;
+    height: 75px;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+.logo {
+    height: 100px;
+    width: 125px;
+    margin-left: 25px;
+    position: absolute;
+    background-image: url(Img/Beeseyewink\ Logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 600px;
+    padding-top: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.intro {
+    margin-top: 30px;
+    margin-left: 130px;
+    color: #425664;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: light;
+    padding-top: 15px;
+}
+
+.kindgrid {
+    display: grid;
+    grid-template-areas:
+        "w1 w2"
+        "w3 w4"
+        "w5 w6"
+        "w7 w8";
+    grid-template-columns: 1fr 2fr;
+    padding: 50px;
+    grid-gap: 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.headinggap {
+    margin-bottom: 25px;
+    color: #425664;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: light;
+}
+
+.words1 {
+    display: grid;
+    justify-items: center;
+    height: 400px;
+    width: 400px;
+    background-image: url(./Img/Shweta-Pramod.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.words2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.words3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.words4 {
+    display: grid;
+    height: 400px;
+    width: 400px;
+    background-image: url(./Img/Devayani-Sagar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.words5 {
+    display: grid;
+    justify-items: center;
+    height: 400px;
+    width: 400px;
+    background-image: url(./Img/Anuja-Harshal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.words6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.words7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.words8 {
+    display: grid;
+    height: 400px;
+    width: 400px;
+    background-image: url(./Img/Radhika-Aditya.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.gridfooter {
+    display: grid;
+    grid-template-areas:
+        "navigation getintouch blank";
+    margin-top: 50px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.navigation {
+    margin-left: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.getintouch {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.p1 {
+    margin-top: 20px;
+}
+
+.p1:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+
+    body,
+    html {
+        width: 100%;
+        overflow-x: visible;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-inline: 50vw;
+        margin-top: 20px;
+    }
+
+    .contentpage {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .intro {
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .headinggap {
+        font-size: 20px;
+    }
+
+    .words4,
+    .words8 {
+        height: 250px;
+        width: 90%;
+        margin: 0px;
+        margin-left: 10px;
+    }
+
+    .words1,
+    .words5 {
+        height: 250px;
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .gridfooter {
+        grid-template-areas:
+            "navigation"
+            "getintouch";
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navigation,
+    .getintouch {
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .p1 {
+        margin-top: 10px;
+    }
+}

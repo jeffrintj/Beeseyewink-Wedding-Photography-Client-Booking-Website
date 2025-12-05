@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contentpage {
+    height: 2040px;
+    width: 100%;
+    background-color: whitesmoke
+}
+
+.navbar {
+    background-color: rgb(250, 250, 157);
+    width: 100%;
+    height: 75px;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+.logo {
+    height: 100px;
+    width: 125px;
+    margin-left: 25px;
+    position: absolute;
+    background-image: url(Img/Beeseyewink\ Logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 600px;
+    padding-top: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.intro {
+    margin-top: 30px;
+    margin-left: 130px;
+    color: #425664;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: light;
+    padding-top: 15px;
+}
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "form pic";
+    grid-template-columns: 1fr 1fr;
+    height: 800px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.form-section {
+    padding: 40px;
+    background-color: #fdf9f6;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+.last {
+    margin-top: 120px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.bio {
+    color: black;
+    text-decoration: none;
+}
+
+.bio:hover {
+    color: goldenrod;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.divider .line {
+    width: 150px;
+    height: 3px;
+    background-color: black;
+    margin: 0 15px;
+}
+
+.socialmedialinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialmedialinks a {
+    width: 50px;
+    height: 50px;
+    background-color: #999999;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.socialmedialinks a:hover {
+    background-color: goldenrod;
+}
+
+.gridfooter {
+    display: grid;
+    grid-template-areas:
+        "navigation getintouch blank";
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.navigation {
+    margin-left: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.getintouch {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.p1 {
+    margin-top: 15px;
+}
+
+.p1:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+
+    body,
+    html {
+        width: 100%;
+        overflow-x: visible;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-inline: 50vw;
+        margin-top: 20px;
+    }
+
+    .contentpage {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .intro {
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .contact {
+        margin: 20px;
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    .container {
+        grid-template-areas:
+            "form"
+            "pic";
+        grid-template-columns: 1fr;
+        padding: 20px;
+        height: auto;
+    }
+
+    .form-container {
+        grid-area: form;
+        padding: 20px;
+    }
+
+    .image-section {
+        grid-area: pic;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .image-section img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .gridfooter {
+        grid-template-areas:
+            "navigation"
+            "getintouch";
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navigation,
+    .getintouch {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .socialmedialinks {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+    
+}
